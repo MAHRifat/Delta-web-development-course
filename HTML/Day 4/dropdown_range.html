@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+<body>
+    <form action="/server">
+        <label for="age">Choose your age: </label>
+        <select name="age" id="age">
+            <option value="18plus">18+</option>
+            <option value="18minus">18-</option>
+            <option value="50pl" selected>50+</option>
+        </select>
+        <br>
+        <label for="vol">Volume: </label>
+        <input type="range" min="0" max="400" name="vol" id="vol" step="40" value="70">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

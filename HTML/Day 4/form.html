@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <!-- 1 way of use label in form -->
+    <form action="POST">
+        <label>
+            username
+            <input type="text" placeholder="Enter your username">
+        </label>
+        <br>
+        <label>
+            password
+        <input type="password" placeholder="Enter your password">
+        </label>
+        <br>
+        <label>
+            Number
+        <input type="number" placeholder="Enter your number">
+        </label>
+        <br>
+        <label>
+            Date Time
+            <input type="datetime-local">
+        </label>
+        <br>
+        <label >
+            Time
+            <input type="time">
+        </label>
+        <br>
+        <label >
+            Color
+        <input type="color" >
+        </label>
+        
+
+    </form>
+    <br><br><br><br><br>
+    <hr>
+    <br>
+
+    <!-- Second way of use label in form -->
+
+    <form action="/server" >
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" placeholder="Enter your username" name="username">
+        </div>
+        <br>
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <button type="submit">submit</button>
+        <button type="button">Button</button>
+        <button type="menu">Menu</button>
+        <button type="reset">Reset</button>
+
+        <br>
+        <input type="button" value="click me">
+        <input type="submit" value="submit">
+        <input type="search" name="" id="">
+    </form>
+<hr>
+<br>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button type="submit">search</button>
+    </form>
+</body>
+</html>
