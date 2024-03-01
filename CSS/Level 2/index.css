@@ -1,0 +1,119 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+h1,h3{
+    color: #b82b97;
+}
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b82b97;
+    color: white;
+}
+
+.up{
+    background-color: green;
+    color: white;
+}
+
+/* .answer{
+    background-color: red;
+    color: white;
+} */
+
+/* decentend selector -> sob level e select kora jabe */
+p a{
+    color: purple;
+    background-color: yellowgreen;
+}
+
+nav ul li a{
+    color: coral;
+}
+
+/* adjecent sibling compication -> same level e thakle apply kora jabe */
+p + h3 {                  
+    text-decoration: underline;
+}
+
+.up + button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+/* chile combinator -> imediate decandent or child select korte parbo  */
+div > input{
+    background-color: lightskyblue
+}
+
+/* Attribue selector -> selects elements based on the presence or value of a given attirbute */
+input[type="text"]{
+    color: red;
+}
+
+input[type="password"]{
+    color: green;
+}
+
+input[type]{
+    background-color: blanchedalmond;
+}
+
+/* pseudo class */
+#login:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+button:hover{
+    background-color: beige;
+    color: black;
+}
+
+h3:hover{
+    text-decoration: overline;
+}
+
+
+button:active{
+    background-color: #b82b97;
+    color: black;
+}
+
+p:active{
+    font-weight: bold;
+    color: rgb(6, 69, 23);
+}
+
+div input:checked + label{
+    color: green;
+    font-size: larger;
+    background-color: beige;
+    font-weight: bolder;
+}
+
+.post:nth-of-type(odd){
+    background-color: chartreuse;
+}
+
+
+/* pseudo elements */
+
+h1::first-letter{
+    color: green;
+}
+
+.para::first-line{
+    color: blue;
+}
+
+p::selection{
+    color: brown;
+    background-color: chartreuse !important; 
+}
+/* !important dile kokhono change kora jabe na */
