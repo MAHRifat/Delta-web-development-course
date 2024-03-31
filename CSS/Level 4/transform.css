@@ -1,0 +1,40 @@
+
+
+div{
+    margin: 20px auto;
+    background-color: aqua;
+    height: 50px;
+    width: 80px;
+    transition: 5s;
+    transition-delay: .5s;
+    border: 2px solid black;
+    box-shadow: 3px 3px 30px green;
+}
+
+div:hover{
+    transform: rotate(360deg) scale(2) translate(90px, 90px);
+    text-align: center;
+    padding-top: 40px;
+}
+
+div:nth-of-type(2n){
+    background-color: rgb(54, 235, 126);
+}
+
+div:nth-of-type(3n){
+    background-color: burlywood;
+}
+
+
+#one{
+    transform: skew(30deg);
+}
+
+#back{
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-image: url("1.jpeg");
+    background-size: cover;
+}

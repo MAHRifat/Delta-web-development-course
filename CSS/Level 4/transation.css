@@ -1,0 +1,20 @@
+
+div{
+    background-color: rgb(16, 189, 189);
+    height: 30px;
+    width: 100px;
+    margin-bottom: 5px;
+    margin: 0 auto;
+    transition: 5s;
+    transition-timing-function: linear;
+}
+
+div:hover{
+    background-color: blueviolet;
+    border-radius: 10%;
+    text-align: center;
+    color: white;
+    margin-top: 80vh;
+}
+
+
