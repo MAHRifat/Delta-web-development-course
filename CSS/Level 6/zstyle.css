@@ -1,0 +1,22 @@
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+/* z-index not working without position and also not working if
+position value is static or defults */
+
+.one{
+    background-color: aquamarine;
+    position: relative;
+    z-index: 1;
+    box-shadow: 2px salmon;
+}
+
+.two {
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+}
