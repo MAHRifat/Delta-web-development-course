@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Edit Message</h1>
+    <form method="post" action="/chats/<%= chat.id %>?_method=PUT">
+        <div class="chatBox">
+            <p><b>From: <%= chat.from %></b></p>
+            <p>To: <%= chat.to %></p>
+            <label for="msg">Message: </label>
+            <textarea name="msg" id="msg" placeholder="<%= chat.msg %>"></textarea>
+            <br><br>
+            <button>update</button>
+        </div>
+    </form>
+</body>
+</html>
