@@ -25,6 +25,14 @@ app.get("/test", (req, res) => {
     res.send("test successful");
 });
 
+// middleware for flash
+
+app.use((req, res, next)=> {
+    res.locals.success = req.flash("success");   // it was save the messages variable to the res.locals
+    res.locals.error = req.flash("error");
+    next();
+});
+
 
 // explore express sessions options
 app.get("/reqcount", (req, res) => {
@@ -55,8 +63,6 @@ app.get("/register", (req, res)=> {
 
 app.get("/hello",(req, res)=> {
     // res.send(`Hello, ${req.session.name}`);
-    res.locals.success = req.flash("success");   // it was save the messages variable to the res.locals
-    res.locals.error = req.flash("error");
     res.render("page.ejs", {name: req.session.name});
 });
 
