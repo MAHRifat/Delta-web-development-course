@@ -41,23 +41,32 @@ app.get("/reqcount", (req, res) => {
 // express session storing and using info
 
 app.get("/register", (req, res)=> {
-    let {name} = req.query;
+    let {name = "anonymous"} = req.query;
     req.session.name = name;   // cerate a session variable
     console.log(req.session.name);
+    if(name === "anonymous"){
+        req.flash("error", "User name must be defined");
+    }else{
+        req.flash("success", "User registered successfully");    // show a pop up message before redirect to /hello   
+    }
     // res.send(name);
-    req.flash("success", "User registered successfully");    // show a pop up message before redirect to /hello
     res.redirect("/hello");
 });
 
 app.get("/hello",(req, res)=> {
     // res.send(`Hello, ${req.session.name}`);
-    res.render("page.ejs", {name: req.session.name, msg: req.flash("success")});
+    res.locals.success = req.flash("success");   // it was save the messages variable to the res.locals
+    res.locals.error = req.flash("error");
+    res.render("page.ejs", {name: req.session.name});
 });
 
 
 // connect-flash -> npm i connect-flash
     // The flash is a special areea of the sessions used for storing messages. Messages are written to the
     // the flash and cleared after being displayed to the user.
+
+
+// res.local
 
 app.listen(3000, () => {
     console.log("Server is listening to 3000");
