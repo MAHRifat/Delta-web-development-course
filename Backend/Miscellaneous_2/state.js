@@ -49,7 +49,7 @@ app.get("/reqcount", (req, res) => {
 // express session storing and using info
 
 app.get("/register", (req, res)=> {
-    let {name = "anonymous"} = req.query;
+    let {name = "anonymous"} = req.query;          // /register?name=rifat
     req.session.name = name;   // cerate a session variable
     console.log(req.session.name);
     if(name === "anonymous"){
