@@ -1,0 +1,26 @@
+React lets you build user interfaces out of individual pieces called components. 
+Create your own React components like Thumbnail, LikeButton, and Video. 
+Then combine them into entire screens, pages, and apps.
+
+Write React using JSX.
+JSX -> JavaScript Extension Syntax. -> its lets us write HTML directly inside JS.
+
+Working -> JSX convert into babel and it also convert into JS. 
+
+
+
+* Set up local environment
+    -> Create-React-App v/s Vite  -> https://semaphoreci.com/blog/vite
+
+    npm create vite@latest
+
+    npm install
+    npm run dev // to start the server
+
+
+* Writing Markup in JSX
+    1. Return a single root element
+    2. close al the tags
+    3. camelcase most of the things
+
+
