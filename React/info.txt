@@ -30,3 +30,6 @@ Working -> JSX convert into babel and it also convert into JS.
 * JSX with curly braces
     -> if we use curly braces it will act like pure js 
 
+* React Props
+    -> Props are the information that you pass to a JSX tag.
+    
