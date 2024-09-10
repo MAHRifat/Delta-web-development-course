@@ -14,5 +14,14 @@ function Product({title, price = 0}){
   
 }
 
+function Hello({userName, colour}){
+    let sty= {color: colour};
+    return(
+        <div>
+            <h1 style={sty}>{userName}</h1>
+        </div>
+    );
+}
 
-export {Product};
+
+export {Product, Hello};

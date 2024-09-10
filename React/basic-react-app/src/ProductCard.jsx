@@ -1,4 +1,4 @@
-import { Product } from "./product";
+import { Product, Hello } from "./product";
 import './productCard.css';
 
 function ProductCard(){
@@ -8,6 +8,7 @@ function ProductCard(){
             <Product title="Laptop" price={60000} />
             <Product title={"Desktop"} price={20000}/>
             <Product title={"Tab"} />
+            <Hello userName={"Rifat"} colour={"pink"}/>
         </div>
     );
 }
