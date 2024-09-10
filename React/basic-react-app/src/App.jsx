@@ -9,6 +9,7 @@ function App() {
    <>
      <Title/>
      <Title/>
+     <p>2 * 2 = { 2* 2 }</p>
    </>
   
   )

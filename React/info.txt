@@ -26,3 +26,7 @@ Working -> JSX convert into babel and it also convert into JS.
 
 * React Fragment
     -> Fragment let you group a list of children without adding extra nodes to the DOM.
+
+* JSX with curly braces
+    -> if we use curly braces it will act like pure js 
+
