@@ -1,0 +1,18 @@
+.card{
+    width: 20%;
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    padding: 0 0 0 0;
+}
+
+.oldPrice{
+    text-decoration: line-through;
+}
+
+.price{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
