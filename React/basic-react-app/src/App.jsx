@@ -6,7 +6,11 @@ function Title(){
 
 function App() {
   return (
-    <Title/>
+   <>
+     <Title/>
+     <Title/>
+   </>
+  
   )
 }
 
