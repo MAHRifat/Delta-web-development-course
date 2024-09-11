@@ -2,8 +2,9 @@ function doSomthing(){
     console.log("Button was clicked");
 }
 
-function printMouseOver(){
+function printMouseOver(event){
     console.log("Mouse over work");
+    console.log(event);
 }
 
 function Button(){

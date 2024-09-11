@@ -2,6 +2,7 @@ import './App.css'
 import ProductCard from './ProductCard'
 import {AmazonCards, Heading} from './amazonCards'
 import { Button } from './Button'
+import Form from './Form'
 
 
 
@@ -12,6 +13,7 @@ function App() {
      {/* <ProductCard/> */}
      <AmazonCards/>
      <Button/>
+     <Form/>
    </>
   
   )
