@@ -2,11 +2,11 @@ import { useState } from "react"
 import { v4 as uuidv4 } from 'uuid';
 
 export default function ToDoList(){
-    let [todos, setTodos] = useState([{task: "" , id: uuidv4()}]);
+    let [todos, setTodos] = useState([{task: "" , id: uuidv4(), isDone: false}]);
     let [newTodo, setNewTodo] = useState("");
 
     let addNewTask = ()=> {
-        setTodos([...todos, {task: newTodo, id: uuidv4()}]);
+        setTodos([...todos, {task: newTodo, id: uuidv4(), isDone: false}]);
     }
 
     let updateTaskValue = (event)=> {
@@ -17,23 +17,25 @@ export default function ToDoList(){
         setTodos((prevTodo)=> todos.filter((prevTodo)=> prevTodo.id != id));
     }
 
-    let uppercaseAll = ()=> {
+    let doneAll = ()=> {
        setTodos(
         todos.map((todo)=> {
             return{
                 ...todo,
-                task: todo.task.toUpperCase(),
+                isDone: true,
             };        
        }))
     }
 
-    let uppercaseOne = (id) => {
+    let styles = {textDecoration: 'line-through',};
+
+    let doneOne = (id) => {
         setTodos((prevTodos)=> 
             prevTodos.map((todo) => {
                 if(todo.id == id) {
                     return{
                         ...todo,
-                        task: todo.task.toUpperCase(),
+                        isDone: true,
                     };
                 } 
                 else {
@@ -53,17 +55,17 @@ export default function ToDoList(){
                 {
                     todos.map((todo)=> ( 
                         <li key={todo.id}>
-                            <span>{todo.task}</span> &nbsp;
+                            {todo.isDone ? <span style={styles}>{todo.task}</span> : <span>{todo.task}</span>} &nbsp;
                             <button onClick={()=> deleteTask(todo.id)} >delete</button>
                             &nbsp; &nbsp;
-                            <button onClick={()=> uppercaseOne(todo.id)}>Uppercase</button>
+                            <button onClick={()=> doneOne(todo.id)}>Done</button>
                         </li>
                     ))
                 }
             </ul>
 
             <br /><br />
-            <button onClick={uppercaseAll}>Uppercase all</button>
+            <button onClick={doneAll}>Done all</button>
         </div>
     )
 }
