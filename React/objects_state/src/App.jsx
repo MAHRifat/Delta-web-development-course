@@ -1,4 +1,5 @@
 import './App.css'
+import Lottery from './Lottery'
 import LudoBoard from './LudoBoard'
 import ToDoList from './TodoList'
 function App() {
@@ -6,7 +7,8 @@ function App() {
   return (
     <>
     {/* <LudoBoard/>        */}
-    <ToDoList/>
+    {/* <ToDoList/> */}
+    <Lottery/>
     </>
   )
 }
