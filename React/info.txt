@@ -53,3 +53,12 @@ Working -> JSX convert into babel and it also convert into JS.
     -> A closure is a feature in JavaScript where an inner function 
         has access to the outer (enclosing) function's variables.
 
+* Functions as Props
+    -> JS Functions are 1st class objects
+        -> This means they can be passed to a function a s argument, returned form it and
+            assigned to a variable.
+
+
+* Forms in React
+    -> The standard way with Forms is to use Controlled components, 
+        so we make React state to be the "single source of truth".
