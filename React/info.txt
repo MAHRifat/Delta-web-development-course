@@ -77,3 +77,6 @@ Working -> JSX convert into babel and it also convert into JS.
     -> Data fetching setting up a subscription and manually changeing the DOM is React
         components are all examples of side effects.
 
+* Material UI
+    -> Library of React UI components
+    -> https://mui.com/material-ui/
