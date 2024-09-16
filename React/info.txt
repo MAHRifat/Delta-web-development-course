@@ -62,3 +62,8 @@ Working -> JSX convert into babel and it also convert into JS.
 * Forms in React
     -> The standard way with Forms is to use Controlled components, 
         so we make React state to be the "single source of truth".
+
+* Handling Multiple inputs
+    -> we create a common handleInputChange() for all elements
+        -> event.target.name        -> changed field
+        -> event.target.value       -> new value of the field
