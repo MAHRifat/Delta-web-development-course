@@ -1,0 +1,15 @@
+.comment{
+    width: 15rem;
+    height: 10rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comments{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
