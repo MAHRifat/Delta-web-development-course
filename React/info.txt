@@ -71,3 +71,9 @@ Working -> JSX convert into babel and it also convert into JS.
 * validations
     -> Formik           -> is the validtions tool for form 
     -> npm install formik
+
+* useEffect()
+    -> The effect Hook lets you perform side effect in function components.
+    -> Data fetching setting up a subscription and manually changeing the DOM is React
+        components are all examples of side effects.
+
