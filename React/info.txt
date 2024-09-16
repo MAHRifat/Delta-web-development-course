@@ -67,3 +67,7 @@ Working -> JSX convert into babel and it also convert into JS.
     -> we create a common handleInputChange() for all elements
         -> event.target.name        -> changed field
         -> event.target.value       -> new value of the field
+
+* validations
+    -> Formik           -> is the validtions tool for form 
+    -> npm install formik
