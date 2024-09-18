@@ -1,0 +1,26 @@
+using PostCSS
+    npm install -D tailwindcss postcss autoprefixer
+    npm i vite
+    npx tailwindcss init -p
+    tailwind.config.js -> content: ["*"],
+    create style.css  -> add ->> @tailwind base;
+                                @tailwind components;
+                                @tailwind utilities;
+    package.json changee -> "scripts": {
+                            "start": "vite"
+                            },
+    npm run state 
+
+using tailwindcss
+    npm install -D tailwindcss
+    npm i vite
+    npx tailwindcss init -p
+    tailwind.config.js -> content: ["*"],
+    create style.css  -> add ->> @tailwind base;
+                                @tailwind components;
+                                @tailwind utilities;
+
+    package.json changee -> "scripts": {
+                            "start": "vite"
+                            },
+    npm run state 
