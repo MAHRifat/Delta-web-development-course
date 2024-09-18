@@ -1,0 +1,21 @@
+.weather{
+    border: 1px solid blue;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    align-items: center;
+    width: 50vw;
+    border: .7px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+}
