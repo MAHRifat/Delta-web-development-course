@@ -1,0 +1,34 @@
+Redux
+    -> state management library for JS apps
+    -> Redux is built for larger, more complex applications
+    -> Redux Toolkit is the official recommendation of writing Redux code.
+
+Understinding Terms
+    -> Store: A centralized store holds the whole state tree of your application..
+
+    -> Reducers: Functions that take the current state and an action as arguments, and return a new state result. In 
+                Other words, (state, action) = newState.
+
+    -> Action: It is a plain JavaScript object that has a type field. (like events)
+
+    -> Slice: Collection of Rudux reducer logic and actions for a single feature in your application
+                typically together in a single file.
+
+
+**** Redux Toolkit lets you write simpler immutable update
+    logic using mutating syntex. like push etc....
+
+
+Provider Component
+    -> The <Provider> Component makes the Redux store available to any nested Components that
+        need to  access the Redux store.
+
+
+Dispatching Action  -> triggering a state change
+    -> The useDispatch hook allows you to send or dispatch an action to the redux store
+        by giving the action as an argument to the dispatch variable.
+
+    -> The useSelector hooks allow you to extract data or the state from the Redux store using 
+        selector function. (returns the date)
+
+*** using useSelector we can access central store Component in nested jsx file.
